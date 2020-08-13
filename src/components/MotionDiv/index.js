@@ -10,7 +10,7 @@ function MotionDiv(props) {
         },
         out: {
             opacity: 0,
-            x:-100
+            x:-300
         }
     }
     const pageTransition = {
