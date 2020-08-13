@@ -1,17 +1,7 @@
 import React from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartBar, faCode, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 
-import bgImage from '../../assets/images/bgImage.svg';
 import AppBar from '../../components/AppBar';
-import YourMsg from '../../components/YourMsg';
-import TextWithUpperLine from '../../components/TextWithUpperLine';
-import BannerText from '../../components/BannerText';
-import DescriptionText from '../../components/DescriptionText';
-import ClientForm from '../../components/ClientForm';
-
-import DescriptionTextWithTopBorder from '../../components/DescriptionTextWithTopBorder';
 
 import { Theme } from '../../theme';
 
@@ -74,8 +64,9 @@ const useStyles = makeStyles((theme) => ({
 
 }))
 
-function ClientDashboard() {
+function ClientDashboard(props) {
     const classes = useStyles();
+
     return (
         <div className={classes.parentAdminLayout}>
             <div className={classes.toolBarPortion}>
@@ -84,24 +75,25 @@ function ClientDashboard() {
 
             <div className={classes.mainSection}>
                 <div className={classes.imageBackgroundSection}>
-                <img src={bgImage} />
+                    {/* Image Section */}
+                    {props.bgImage}               
                 <div className={classes.yourMsgSection}>
-                    <YourMsg theme = {Theme}/>
+                    {/* Chat box Section */}
+                    {props.chatBoxSection}
                 </div>
                 </div>
     
                 <div className={classes.descriptionSection}>
                     <div className={classes.spacerz} />
-                    <TextWithUpperLine theme = {Theme}/>
-                   
-                    <BannerText theme={Theme} title="Grow your Business with #1 CRM"/>
-                    <DescriptionText theme={Theme} title="Our Elite Team builds apps, responsive web apps,
-                     mobile apps, and any digital products that interacts" />
-                     <ClientForm theme={Theme}/>
+                    {/* Text With Upper Line Section */}
+                    {props.textWithUpperLine}
+                       {/* Banner Text Section */}
+                    {props.bannerText}
+                    {props.descriptionSection}
+               
+                    {props.clientForm}
                     <div className={classes.linedTexts}>
-                    <DescriptionTextWithTopBorder theme={Theme} textNo="01." title="Create App faster at Lower" />
-                    <DescriptionTextWithTopBorder theme={Theme} textNo="02." title="Create App faster at Lower" />
-                    <DescriptionTextWithTopBorder theme={Theme} textNo="03." title="Create App faster at Lower" />
+                   {props.linedTextSection}
                     </div>
                     
                 </div>

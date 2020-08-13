@@ -9,6 +9,10 @@ import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
+import {
+  NavLink
+} from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -165,8 +169,8 @@ export default function AppBarClient(props) {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Services</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Contact</MenuItem>
     </Menu>
   );
 
@@ -181,14 +185,17 @@ export default function AppBarClient(props) {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>              
-        <p><a className={classes.linkItemStyleMobile} href="#whoami">Product</a> </p>
+      <MenuItem>
+      <NavLink to="/" exact className={classes.linkItemStyle} activeStyle={{ color: 'black' }}>Home</NavLink>
       </MenuItem>
       <MenuItem>              
-        <p><a className={classes.linkItemStyleMobile} href="#works">Services</a></p>
+        <p><a className={classes.linkItemStyle}  href="#works">Services</a></p>
       </MenuItem>
       <MenuItem>
-        <p> <a href="mailto:onipetheoderic@gmail.com" target="blank" className={classes.linkItemStyleMobile}>Contact</a></p>
+      
+        <p> <NavLink to="/contact" className={classes.linkItemStyle}  
+          activeStyle={{ color: 'black' }}>Contact</NavLink></p>
+        
       </MenuItem>
       
     </Menu>
@@ -209,14 +216,14 @@ export default function AppBarClient(props) {
           <div className={classes.sectionDesktop}>
            
             <Typography className={classes.itemStyle} variant="h6" noWrap>
-                 <a className={classes.linkItemStyle} href="#whoami">Product</a> 
+            <NavLink to="/" exact className={classes.linkItemStyle} activeStyle={{ color: 'black' }}>Home</NavLink>
              </Typography>
              <Typography className={classes.itemStyle} variant="h6" noWrap>
              <a className={classes.linkItemStyle} href="#works">Service</a>
              </Typography>
             <Typography className={classes.itemStyle} variant="h6" noWrap>
-                <a href="mailto:onipetheoderic@gmail.com" target="blank" 
-                className={classes.linkItemStyle}>Contact</a>
+                  <NavLink to="/contact" className={classes.linkItemStyle} 
+          activeStyle={{ color: 'black' }}>Contact</NavLink>
              </Typography>
 
            

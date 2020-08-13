@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
   })
 }))
 
-function TextWithUpperLine({theme}) {
+function TextWithUpperLine({theme, title}) {
     const classes = useStyles(theme);
     return (
         <div className={classes.parentTextWithUpperLineLayout}>
-            <h4 className={classes.TextWithUpperLineTitle}>Quick Delivery of Product</h4>
+            <h4 className={classes.TextWithUpperLineTitle}>{title}</h4>
         </div>
     )
 }
