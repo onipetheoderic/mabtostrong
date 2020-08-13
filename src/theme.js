@@ -1,0 +1,16 @@
+export const Theme = {
+    recessiveColor: '#7b65e8',
+    dominantColor: '#ffffff',
+    oceanBlue: '#00b3ff',
+    dominantTextColor: '#0c2031',
+    recessiveTextColor: '#848e9f',
+    textFieldColor: '#f8f7f7',
+    textFieldButtonColor: '#dbf4ff',
+    logoTextColor: '#212125',
+    appBarTextColor: '#6b787d',
+    iconSurroundColor: '#4e3ba8',
+    singleTextColor: '#f3f2f9',
+    chatTextColor: '#edeafc',
+    lineColor: '#eaeced',
+    smallLineColor: '#838c9f',
+}

@@ -1,0 +1,8 @@
+{
+    "name": "textwithupperline",
+    "version": "0.0.1",
+    "private": true,
+    "description": "This is the text with upper line",
+    "author": "Theoderic Onipe",
+    "main": "TextWithUpperLine.js"
+}

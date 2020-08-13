@@ -1,0 +1,8 @@
+{
+    "name": "clientdashboard",
+    "version": "0.0.1",
+    "private": true,
+    "description": "This is the client landing page layout",
+    "author": "Theoderic Onipe",
+    "main": "ClientDashboard.js"
+}

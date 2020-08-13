@@ -1,0 +1,8 @@
+{
+    "name": "clientform",
+    "version": "0.0.1",
+    "private": true,
+    "description": "client form with textfield and button",
+    "author": "Theoderic Onipe",
+    "main": "ClientForm.js"
+}

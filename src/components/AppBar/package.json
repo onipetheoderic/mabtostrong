@@ -1,0 +1,8 @@
+{
+    "name": "appbar",
+    "version": "0.0.1",
+    "private": true,
+    "description": "This is the appbar for the client",
+    "author": "Theoderic Onipe",
+    "main": "AppBar.js"
+}

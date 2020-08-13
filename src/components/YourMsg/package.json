@@ -1,0 +1,8 @@
+{
+    "name": "yourmsg",
+    "version": "0.0.1",
+    "private": true,
+    "description": "This is the Messaging Section, to be connected with socket.io",
+    "author": "Theoderic Onipe",
+    "main": "YourMsg.js"
+}
