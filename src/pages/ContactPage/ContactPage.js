@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MotionDiv from '../../components/MotionDiv';
-import bgImage from '../../assets/images/bgImage3.svg';
+import bgImage from '../../assets/images/contact2.svg';
 import BannerText from '../../components/BannerText';
 import ClientDashboard from '../../layouts/ClientDashboard';
 import ClientForm from '../../components/ClientForm';
@@ -25,9 +25,9 @@ function ContactPage() {
             // chatBoxSection = {<YourMsg theme = {Theme}/>}
             textWithUpperLine = {<TextWithUpperLine theme = {Theme} title="Contact Us Today"/>}
             bannerText = {<BannerText theme={Theme} title="We are always ready to Answer your needs"/>}
-            descriptionSection = {<DescriptionText theme={Theme} title="Need a Quote or You want to make Enquiries about our Services, Contact Us on this Address" />}
-            clientForm = {<ClientForm theme={Theme}/>}
-            linedTextSection = {bottomTextSection}
+            descriptionSection = {<DescriptionText theme={Theme} title="+2348094385559, +2348120470392" />}
+            
+            
             />
         </MotionDiv>
     )

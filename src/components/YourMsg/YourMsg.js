@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
 
-
+import ReactWhatsapp from 'react-whatsapp';
 
 const useStyles = makeStyles((theme) => ({
   parentYourMsgLayout: props=> ({
@@ -57,6 +57,10 @@ const useStyles = makeStyles((theme) => ({
     color: props.chatTextColor
 }),
 
+btnLink: {
+textDecoration:'none'
+},
+
 buttonPositioner: {
     display:'flex',
     justifyContent:'flex-end',
@@ -67,6 +71,7 @@ buttonCont: props =>({
     backgroundColor: props.oceanBlue,
     paddingLeft:15,
     paddingRight:15,
+    cursor:'pointer',
     paddingTop:5,
     paddingBottom:5,
     borderRadius:4,
@@ -79,14 +84,14 @@ function YourMsg({theme}) {
     const classes = useStyles(theme);
     return (
         <div className={classes.parentYourMsgLayout}>
-            <h4 className={classes.YourMsgTitle}>Your Messages</h4>
+            <h4 className={classes.YourMsgTitle}>Chat with us</h4>
             <div className={classes.surroundContainer}>
                 <div className={classes.surroundText}>
                     <span className={classes.textLetter}>M</span>
                 </div>
                 <div className={classes.textSection}>
                     <div className={classes.minContainer}>
-                        <span>Mabto</span> <span>2 mins Ago</span>
+                        <span>Mabto</span> <span>Online</span>
                     </div>
                     <div className={classes.minContainer2}>
                         <span>Hey there, How can we help you</span>
@@ -95,9 +100,13 @@ function YourMsg({theme}) {
                 </div>
                
             </div>
+           
             <div className={classes.buttonPositioner}>
                 <div className={classes.buttonCont}>
-                    <span>Lets Chat</span>
+                    
+                <a className={classes.btnLink} target="_blank" href="https://api.whatsapp.com/send?phone=+2348094385559">
+                <span>Lets Chat</span>
+                </a>                
                 </div>
             </div>
            

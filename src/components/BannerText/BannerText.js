@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   BannerTextTitle: props => ({
     color: props.dominantTextColor,
     fontFamily: 'Montserrat',
-    fontSize: 44,
+    fontSize: 34,
     fontWeight:'bold',
     [theme.breakpoints.down('sm')]: {     
       fontSize: 27,

@@ -36,6 +36,13 @@ const useStyles = makeStyles((theme) => ({
        margin:0,
       }, 
   },
+  services: {
+    width:'80%', 
+    height:300, 
+    [theme.breakpoints.down('sm')]: {
+        width:'100%', 
+       }, 
+  },
   yourMsgSection: {
       marginLeft:'20%',
       width:'80%',
@@ -84,11 +91,59 @@ function ClientDashboard(props) {
                 </div>
     
                 <div className={classes.descriptionSection}>
+                    
                     <div className={classes.spacerz} />
                     {/* Text With Upper Line Section */}
                     {props.textWithUpperLine}
+                    {props.services
+                    &&  
+                    <div className={classes.services}>
+                        <ol>
+                            <li>
+                            Enterprise software development 
+                            </li>
+                            <li>
+                            Network and cyber security 
+                            </li>
+                            <li>
+                            ICT courseware design and development 
+                            </li>
+                            <li>
+                            Corporate training and development 
+                            </li>
+                            <li>
+                            Mobile App development
+                            </li>
+                            <li>
+                            Digital marketing & Content management 
+                            </li>
+                            <li>
+                            Website and web portal Design and development
+                            </li>
+                            <li>
+                            Embedded Systems & Machine Learning
+                            </li>
+                            <li>
+                            Cloud Infrastructure Management
+                            </li>
+                            <li>
+                            Software testing, Maintenance and Support Service
+                            </li>
+                            <li>
+                            Big Data Ware Housing and data security
+                            </li>
+                            <li>
+                            Social Media Optimization and business strategy development
+                            </li>
+                        </ol>
+                    </div>
+                    }
+                   
                        {/* Banner Text Section */}
-                    {props.bannerText}
+                       <div>
+                       {props.bannerText}
+                       </div>
+                   
                     {props.descriptionSection}
                
                     {props.clientForm}

@@ -67,18 +67,16 @@ const useStyles = makeStyles((theme) => ({
     iconText: {
     fontSize:10,
     paddingLeft:5,
-    fontFamily: 'Cousine'
+    fontFamily: 'Montserrat'
   },
     linkItemStyle: props => ({
     textDecoration:'none',
-    fontFamily: 'Nunito',
     fontWeight: 'bold',
     color:props.appBarTextColor,
   }),
 
   linkItemStyleMobile: (props)=>({
     textDecoration:'none',
-    fontFamily: 'Cousine',
     color:props.appBarTextColor,
   }),
 
@@ -91,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
     iconWithText: {
     fontSize:12,
     marginLeft:20,
-    fontFamily: 'Cousine'
+    fontFamily: 'Montserrat'
   },
   inputRoot: {
     color: 'inherit',
@@ -109,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
     itemStyle: {
     fontSize:12,
     marginLeft:40,
-    fontFamily: 'Cousine',
+    fontFamily: 'Montserrat',
     color:'white',
     
   },
@@ -122,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
   },
     iconBtn: {
       marginRight:40,
-      fontFamily: 'Cousine'
+      fontFamily: 'Montserrat'
   },
   sectionMobile: {
     display: 'flex',
@@ -189,13 +187,14 @@ export default function AppBarClient(props) {
       <NavLink to="/" exact className={classes.linkItemStyle} activeStyle={{ color: 'black' }}>Home</NavLink>
       </MenuItem>
       <MenuItem>              
-        <p><a className={classes.linkItemStyle}  href="#works">Services</a></p>
-      </MenuItem>
+      <p> <NavLink to="/services" className={classes.linkItemStyle}  
+          activeStyle={{ color: 'black' }}>Services</NavLink></p></MenuItem>
       <MenuItem>
-      
-        <p> <NavLink to="/contact" className={classes.linkItemStyle}  
-          activeStyle={{ color: 'black' }}>Contact</NavLink></p>
-        
+      <p> <NavLink to="/contact" className={classes.linkItemStyle}  
+          activeStyle={{ color: 'black' }}>Contact</NavLink></p></MenuItem>
+      <MenuItem>
+        <p> <NavLink to="/aboutus" className={classes.linkItemStyle}  
+      activeStyle={{ color: 'black' }}>About Us</NavLink></p>
       </MenuItem>
       
     </Menu>
@@ -219,14 +218,18 @@ export default function AppBarClient(props) {
             <NavLink to="/" exact className={classes.linkItemStyle} activeStyle={{ color: 'black' }}>Home</NavLink>
              </Typography>
              <Typography className={classes.itemStyle} variant="h6" noWrap>
-             <a className={classes.linkItemStyle} href="#works">Service</a>
+                  <NavLink to="/services" className={classes.linkItemStyle} 
+          activeStyle={{ color: 'black' }}>Services</NavLink>          
              </Typography>
             <Typography className={classes.itemStyle} variant="h6" noWrap>
                   <NavLink to="/contact" className={classes.linkItemStyle} 
-          activeStyle={{ color: 'black' }}>Contact</NavLink>
+          activeStyle={{ color: 'black' }}>Contact</NavLink>          
              </Typography>
 
-           
+             <Typography className={classes.itemStyle} variant="h6" noWrap>
+                  <NavLink to="/aboutus" className={classes.linkItemStyle} 
+          activeStyle={{ color: 'black' }}>About Us</NavLink>          
+             </Typography>
           
           </div>
           <div className={classes.sectionMobile}>
