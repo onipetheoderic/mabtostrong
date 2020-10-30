@@ -9,18 +9,25 @@ export default function TeamCard({bgImage, name, position}) {
         minHeight:500,
         marginLeft:10,
         marginRight:10,
-        position:'relative'
+        position:'relative',
+        [theme.breakpoints.down('sm')]: {
+          flexDirection:'column',
+          width:'100%',
+          marginLeft:0,
+          marginTop:20
+        }, 
        },
        bgImage: {
         width:'100%',
         height:500,
        },
        name: {
-        fontSize:15,
-        fontWeight:'bold'
+        fontSize:13,
+        fontWeight:'bold',
+        textAlign:'center'
        },
        fullname: {
-        fontSize:20,
+        fontSize:18,
         fontWeight:'bold'
        },
        bottomCardTextRegion: {

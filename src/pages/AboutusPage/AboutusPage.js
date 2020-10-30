@@ -35,6 +35,9 @@ function AboutusPage() {
             display:'flex', 
             flexDirection:'row', 
             marginBottom:20,
+            [theme.breakpoints.down('sm')]: {
+                flexWrap:'wrap'
+              }, 
           
         }
     }));
@@ -61,10 +64,10 @@ function AboutusPage() {
             />
             <h1 style={{alignSelf:'center', fontSize:20, textAlign:'center'}}>Team members</h1>
             <div className={classes.teamCont1}>
-                <TeamCard bgImage = {Three} name="Joshua Sadoluwa" position="CEO, chief Architect" />
+                <TeamCard bgImage = {Three} name="Joshua Sadoluwa" position="CEO, Chief Architect" />
                 <TeamCard bgImage = {Two} name="Theoderic Onipe" position="Senior Software engineer, DevOps Engineer" />               
                 <TeamCard bgImage = {Four} name="Samuel Joshua" position="Product & Marketing Manager" />
-                <TeamCard bgImage = {One} name="Ojobo Agbo" position="Knowledge Management & Research lea" />
+                <TeamCard bgImage = {One} name="Francis Nnorom" position="Network Infrastructure & Operations" />
             </div>
         
         </MotionDiv>
