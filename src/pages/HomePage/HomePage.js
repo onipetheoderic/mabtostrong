@@ -35,12 +35,15 @@ function HomePage() {
           justifyContent:'center',
             marginTop:20,
             marginBottom:20, 
-            width:'100%',
+            width:'95%',
+            alignSelf:'center',
+            marginLeft:'auto',
+            marginRight:'auto',
             display:'flex',
             flexWrap:'wrap',
             flexDirection:'row',
             [theme.breakpoints.down('sm')]: {
-               width: '100%'
+               width: '95%'
               }, 
          
         },

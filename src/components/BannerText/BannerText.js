@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       alignSelf:'center',
       display:'flex',
       marginBottom:20,
-      marginLeft:20,
+     
      
     }, 
   }),  
@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight:'bold',
     [theme.breakpoints.down('sm')]: {     
       fontSize: 27,
+      textAlign:'center',
       alignSelf:'center',
       display:'flex',
      

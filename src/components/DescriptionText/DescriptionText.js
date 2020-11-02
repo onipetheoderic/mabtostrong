@@ -10,16 +10,21 @@ const useStyles = makeStyles((theme) => ({
     display:'flex',
     alignItems:'flex-end',
     [theme.breakpoints.down('sm')]: {
-      marginLeft:20,
       width: '90%',
       alignSelf:'center',
       display:'flex',
+      marginLeft:'auto',
+      marginRight:'auto'
     }, 
   }),  
   DescriptionTextTitle: props => ({
     color: props.recessiveTextColor,
     fontFamily: 'Montserrat',
     fontSize: 15,
+    [theme.breakpoints.down('sm')]: {
+      textAlign:'center'
+    },
+    
   })
 }))
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { Switch, Route, HashRouter as Router, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion"
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';

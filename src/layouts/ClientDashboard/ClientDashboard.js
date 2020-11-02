@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     flex: 1,
     marginLeft:50,
     [theme.breakpoints.down('sm')]: {
-       margin:0,
+       marginLeft:0,
       }, 
   },
   services: {
@@ -63,8 +63,9 @@ const useStyles = makeStyles((theme) => ({
       width:'60%',
       [theme.breakpoints.down('sm')]: {
         width:'90%',
+        marginLeft:'auto',
+        marginRight:'auto',
         marginTop:80,
-        marginLeft:20
         }, 
   }
 
@@ -93,7 +94,8 @@ function ClientDashboard(props) {
                 <div className={classes.descriptionSection}>
                     
                     <div className={classes.spacerz} />
-                    {/* Text With Upper Line Section */}
+                 
+                 
                     {props.textWithUpperLine}
                     {props.services
                     &&  
@@ -138,8 +140,6 @@ function ClientDashboard(props) {
                         </ol>
                     </div>
                     }
-                   
-                       {/* Banner Text Section */}
                        <div>
                        {props.bannerText}
                        </div>
