@@ -32,11 +32,10 @@ function HomePage() {
     const useStyles = makeStyles((theme) => ({
 
         imageLogos: {
-            marginLeft:'auto',
-            marginRight:'auto',
+          justifyContent:'center',
             marginTop:20,
             marginBottom:20, 
-            width:'90%',
+            width:'100%',
             display:'flex',
             flexWrap:'wrap',
             flexDirection:'row',
@@ -62,16 +61,13 @@ function HomePage() {
             width:'100%',
         },
         imagesStyle: {
-            width:269, 
-            height:100,
+            width:'14%', 
+            height:70,
             [theme.breakpoints.down('sm')]: {
                 width: '100%'
                }, 
         },
-        clientHeader: {          
-
-            
-        }
+       
     }))
 
     const classes = useStyles();
@@ -97,9 +93,9 @@ function HomePage() {
             For the last 7 years we have gained above industry standard experience working with clients like the NNPC, NOA, REA, FMWH, ICPC, ETC AMONGST others. " />}
             linedTextSection = {bottomTextSection}
             />
-            <div className={classes.client}>
+            {/* <div className={classes.client}>
                 <h1 className={classes.clientHeader}>Our Clients</h1>
-            </div>
+            </div> */}
             <div className={classes.imageLogos}>
                 <img src={One} className={classes.imagesStyle}/>
                 <img src={Two} className={classes.imagesStyle}/>
