@@ -18,6 +18,7 @@ import One from '../../assets/images/1.jpg';
 import Two from '../../assets/images/2.jpg'
 import Three from '../../assets/images/3.jpg'
 import Four from '../../assets/images/4.jpg'
+import Five from '../../assets/images/5.jpg'
 
 
 function AboutusPage() {
@@ -39,7 +40,16 @@ function AboutusPage() {
                 flexWrap:'wrap'
               }, 
           
-        }
+        },
+        client2: {
+            display:'flex',
+            alignSelf:'center',
+            justifyContent:'center',
+            alignItems:'center',
+            height:100,
+            width:'100%',
+           
+        },
     }));
     const classes = useStyles();
 
@@ -64,12 +74,15 @@ function AboutusPage() {
             />
             <h1 style={{alignSelf:'center', fontSize:20, textAlign:'center'}}>Team members</h1>
             <div className={classes.teamCont1}>
-                <TeamCard bgImage = {Three} name="Joshua Sadoluwa" position="CEO, Chief Architect" />
-                <TeamCard bgImage = {Two} name="Theoderic Onipe" position="Senior Software engineer, DevOps Engineer" />               
-                <TeamCard bgImage = {Four} name="Samuel Joshua" position="Product & Marketing Manager" />
-                <TeamCard bgImage = {One} name="Francis Nnorom" position="Network Infrastructure & Operations" />
+                <TeamCard certification="B.Eng. MBA; 7+ years enterprise software project management." certification2="ICT business development and IT product management experience." bgImage = {Three} name="Joshua Sadoluwa" position="CEO, Chief Architect" />
+                <TeamCard certification="7+ years full stack senior web developer" certification2="Senior Software Engineer/Devops, website development, ios/android application development using react native and flutter, Infrastructure as code using ansible, backend development using nodejs, ruby on rails, frontend development using Reactjs and svelte"  bgImage = {Two} name="Theoderic Onipe" position="Senior Software engineer, DevOps Engineer" />               
+                <TeamCard certification="5+ years, Digital Marketing and Product Manager" certification2="Digital 	marketing and Market 	Research, and Market research" bgImage = {Four} name="Samuel Joshua" position="Product & Marketing Manager" />
+                <TeamCard certification="Network infrastructure and operations " certification2="Network infrastructure management, Logistic supply chain management " bgImage = {One} name="Francis Nnorom" position="Network Infrastructure & Operations" />
+                <TeamCard certification="6+ years Global certified emotional intelligence and business strategy coach" certification2="Workforce Activation Trainer, Strategy Consultant, Performance Coach" bgImage = {Five} name="Ojobo Agbo" position="Knowledge management and research LEA" />
             </div>
-        
+            <div className={classes.client2}>
+               <span>© 2020 MabtoStrong. All rights reserved.</span>
+            </div>
         </MotionDiv>
     )
 }
